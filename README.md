@@ -6,7 +6,6 @@ JMS adaptors are connected to the integration flow working with ArtemisQM JMS de
 
 ![Integration Platform](IP.png)
 
-### Simple flow description
 - JMS destinations of the NETWORK are mapped into integration message channels
 - Messages are routed by the message format type
 - Specific validation of the transaction's payload based on the message format type
