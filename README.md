@@ -6,12 +6,12 @@ JMS adaptors are connected to the integration flow working with ArtemisQM JMS de
 
 ![Integration Platform](IP.png)
 
-### Simple flow
-- Send a transaction message to JMS _network_ destination
-- The integration flow enrich the header
-- The message is routed by the _format message type_ for validation 
-- A bridge connection merge all the specific flows into gateway
-- For each destination _(BIC/SWIFT code)_, the gateway forward the message to the specific JMS destination
+### Simple flow description
+- JMS destinations of the NETWORK are mapped into integration message channels
+- Messages are routed by the message format type
+- Specific validation of the transaction's payload based on the message format type
+- All transactions are sent to the specific messaging gateway
+- Integration message channels are mapped into JMS destinations of the GATEWAY system
 
 ### CLI
 
