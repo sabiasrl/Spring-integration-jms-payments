@@ -12,14 +12,15 @@ import org.springframework.messaging.support.MessageBuilder;
 
 import java.time.Duration;
 
-@SpringBootTest
+@SpringBootTest(properties = {
+        "command.line.runner.enabled=false"})
 class JmsITests {
     @Autowired
     private JmsTemplate jmsTemplate;
 
     @Test
     void jmsAdaptorsBranchNo1Test() {
-        jmsTemplate.convertAndSend("jms.network", MessageBuilder.withPayload(
+        jmsTemplate.convertAndSend("network", MessageBuilder.withPayload(
                         Transaction.builder()
                                 .message("{eur:300.00}")
                                 .receiverName("AAAABBCCDD")
@@ -34,6 +35,7 @@ class JmsITests {
                     Assertions.assertNotNull(transaction);
                     Assertions.assertEquals("{eur:300.00}", transaction.getMessage());
                     Assertions.assertEquals(MessageFormatType.MT1, transaction.getMessageFormatType());
+                    Assertions.assertEquals("AAAABBCCDD", transaction.getReceiverName());
                 });
     }
 }

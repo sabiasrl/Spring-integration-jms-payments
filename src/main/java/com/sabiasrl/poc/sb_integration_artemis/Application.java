@@ -112,7 +112,6 @@ public class Application {
                             break;
                         }
                         default: {
-                            flow.channel("errorChannel");
                         }
                     }
                     return payload;

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sabiasrl.poc</groupId>
-	<artifactId>sb-integration-artemis</artifactId>
+	<artifactId>spring-integration-jms-payments</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sb-integration-artemis</name>
-	<description>Demo project for Spring Boot, Integration, Artemis</description>
+	<name>spring-integration-jms-payments</name>
+	<description>Demo project for banking transactions using Spring Boot, Spring Integration, JMS and Artemis MQ</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

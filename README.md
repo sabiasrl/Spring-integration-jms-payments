@@ -19,7 +19,7 @@ JMS adaptors are connected to the integration flow working with ArtemisQM JMS de
 mvn clean verify
 ```
 
-##### run 
+##### run demo
 ```shell
 mvn clean install -DskipTests spring-boot:run 
 ```
