@@ -1,6 +1,6 @@
 ## Spring-boot Integration JMS Payments
 
-Demo usage of Spring Integration DLS with Fluent Builder API.  
+Demo of an Integration and BPM flow using Spring Integration DLS with Fluent Builder API.  
 The integration flow implements a simple banking payment scenario simulating a **messaging hub** which send transactions from a mapped **network** to a **gateway**.  
 JMS adaptors are connected to the integration flow working with ArtemisQM JMS destinations.
 
